@@ -1,6 +1,6 @@
 # Dynamodb::Test
 
-TODO: Write a gem description
+Some basic tests against Amazon's Dynamodb.
 
 ## Installation
 
@@ -18,11 +18,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Create a .env containing
+
+    AMAZON_KEY=your_amazon_key
+		AMAZON_SECRET=your_amazon_secret
+
+Run the `dynamodb` command
+
+    $ dynamodb
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/dynamodb-test/fork )
+1. Fork it ( http://github.com/jkamenik/dynamodb-test/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
