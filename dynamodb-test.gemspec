@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Dynamodb::Test::VERSION
   spec.authors       = ["John Kamenik"]
   spec.email         = ["jkamenik@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Amazon dynamodb test.}
+  spec.description   = %q{Tests accessing a dynamodb instance in ruby.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -18,6 +18,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_dependency 'dotenv'
+  spec.add_dependency 'aws-sdk'
   spec.add_development_dependency "bundler", "~> 1.5"
   spec.add_development_dependency "rake"
 end
