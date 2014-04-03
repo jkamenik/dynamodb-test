@@ -54,8 +54,8 @@ module Dynamodb
         table = get_table(args.shift)
         
         table.items.create(
-          account_id: 'test',
-          page:       'foo',
+          account_id: 'test',  # primary key
+          page:       'foo',   # range
           content:    '<html></html>'
         )
       end
