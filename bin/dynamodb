@@ -1,12 +1,11 @@
 #!/usr/bin/env ruby
 
+LIB_DIR = File.expand_path('../../lib',__FILE__)
+$LOAD_PATH.unshift LIB_DIR
+
+require 'dynamodb-test'
 require 'aws/dynamo_db'
 require 'dotenv'
 Dotenv.load
 
-db = dynamo_db = AWS::DynamoDB.new(
-  :access_key_id => ENV['AMAZON_KEY'],
-  :secret_access_key => ENV['AMAZON_SECRET']
-)
-
-p db.tables.to_a
+Dynamodb::Test::Cli.new.run *ARGV

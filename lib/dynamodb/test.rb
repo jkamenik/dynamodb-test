@@ -1,4 +1,5 @@
 require "dynamodb/test/version"
+require 'dynamodb/test/cli'
 
 module Dynamodb
   module Test
